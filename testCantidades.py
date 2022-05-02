@@ -1,11 +1,12 @@
-from gestion.zona import Zona
-from gestion.zoologico import Zoologico 
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
+from zona import Zona
+from zoologico import Zoologico
 from zooAnimales.animal import Animal
+from zooAnimales.mamifero import Mamifero
+from zooAnimales.ave import Ave
+from zooAnimales.reptil import Reptil
+from zooAnimales.pez import Pez
+from zooAnimales.anfibio import Anfibio
+
 
 zoo = Zoologico("Zoologico Central", "Chicago")
 z1 = Zona("zona1")
@@ -43,25 +44,25 @@ def testCantidadAnimalesZonas():
         ok = True
     assert(ok)
 
-def testCantidadMamiferos():
+def testCantidadmamifero():
     ok = False
     if Mamifero.caballos == 3 and Mamifero.leones == 1:
         ok = True
     assert(ok)
 
-def testCantidadAves():
+def testCantidadave():
     ok = False
     if Ave.aguilas == 2 and Ave.halcones ==3:
         ok = True
     assert(ok)
 
-def testCantidadAnfibios():
+def testCantidadanfibio():
     ok = False
     if Anfibio.ranas == 2 and Anfibio.salamandras == 1:
         ok = True
     assert(ok)
 
-def testCantidadReptiles():
+def testCantidadreptil():
     ok = False
     if Reptil.iguanas == 2 and Reptil.serpientes == 1:
         ok = True
